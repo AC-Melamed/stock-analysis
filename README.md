@@ -25,28 +25,35 @@ After an initial analysis targeting a particular stock identified by the client 
 The results of this project's final analysis are as follow:  
  
 ### Comparing Stock Performance Between 2017-2018
- 
- 
+The quantitative results of the analysis of stock values for this project can be seen below.  These results show that the companies "ENPH" and "RUN" are the only one whose stocks made positive returns in both 2017 and 2018, with the percentage returns for "ENPH" being comparatively great enough in both years to qualify it as the most likely investment for the client.  
+#### Analysis Results 2017
+![2017 Results](https://github.com/AC-Melamed/stock-analysis/blob/main/Resources/VBA_Challenge_RESULTS_2017.png "2017 Results")
+#### Analysis Results 2018
+![2018 Results](https://github.com/AC-Melamed/stock-analysis/blob/main/Resources/VBA_Challenge_RESULTS_2018.png "2018 Results")
  
 ### Comparing Execution Times Between Original and Refactored Code
  
 The original version of the VBA macro code relied on a series of nested 'For' loops whereby the total volume and stock price values were calculated linearly in the order they appeared within the data set and only collated under the label of their respective stock tickers at the end of the process.
 #### Pre-Refactoring Code
- 
+![Pre-Refact Code](https://github.com/AC-Melamed/stock-analysis/blob/main/Resources/VBA_Challenge_MacroCode_PRE-REFACTORING.png "Pre-Refact Code")
+
 The original, pre-refactoring code reported runtimes of slightly under 1 second for each year's dataset.  
 #### Pre-Refactoring Runtime 2017
- 
+![Pre-Refact Runtime 2017](https://github.com/AC-Melamed/stock-analysis/blob/main/Resources/VBA_Challenge_2017_PRE-REFACTORING.png "Pre-Refact Runtime 2017") 
+
 #### Pre-Refactoring Runtime 2018
- 
+![Pre-Refact Runtime 2018](https://github.com/AC-Melamed/stock-analysis/blob/main/Resources/VBA_Challenge_2018_PRE-REFACTORING.png "Pre-Refact Runtime 2018") 
  
 The original code was subsequently refactored such that the total volume and price values were defined as their own arrays with set dimensions for being indexed using the 'ticker' array which stored the 11 distinct stock tickers.  The 'ticker' array was incorporated into the 'For' loops in a way that allowed for the volume and price values for each distinct stock to be calculated and summed before the next, dramatically reducing the runtime required to complete the analysis.  
 #### Refactored Code
- 
+![Refactored Code](https://github.com/AC-Melamed/stock-analysis/blob/main/Resources/VBA_Challenge_MacroCode_REFACTORED.png "Refactored Code") 
+
 After refactoring, the macro ran much more quickly while producing the same results for each year, completing for both in nearly a tenth of the original times.
 #### Refactored Runtime 2017
+![Refact Runtime 2017](https://github.com/AC-Melamed/stock-analysis/blob/main/Resources/VBA_Challenge_2017.png "Refact Runtime 2017") 
  
 #### Refactored Runtime 2018
- 
+![Refact Runtime 2018](https://github.com/AC-Melamed/stock-analysis/blob/main/Resources/VBA_Challenge_2018.png "Refact Runtime 2018") 
  
 ## Summary
 The broad conclusions of this project are hereby summarized:
